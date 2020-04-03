@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Error - Pagina no encontrada</title>
+</head>
+<style>
+     /*Cuerpo*/
+     body {
+        margin: 0px;
+        background-image: linear-gradient(#21C08B, #AB88FF);
+        font-family: 'Muli', sans-serif;
+    }
+    /*Header*/
+    .header {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__img {
+        width: 200px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    /*Section*/
+    .error {
+        min-height: calc(100vh - 200px);
+    }
+    .error__contenido {
+        transform: translate(-50%,-50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .error__img {
+        width: 200px;
+    }
+    .error__text {
+        color: white;
+    }
+    .regresar {
+        text-decoration: none;
+        color: white;
+    }
+    .regresar:hover {
+        text-decoration: underline;
+    }
+    /*Animación*/
+    .animacion {
+        animation-duration: 2.5s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes error__img {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+    }
+    .error__img {
+    animation-name: error__img;
+    animation-duration: 1s;
+    }
+    /*Footer*/
+    .footer {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    }
+    .footer a {
+        cursor: pointer;
+        font-size: 14px;
+        color: white;
+        padding-left: 30px;
+        text-decoration: none;
+    }
+    .footer a:hover{
+        text-decoration: underline;
+    }
+
+</style>
+<body>
+    <header class="header">
+        <img class="header__img animacion" src="../Assets/Logo.png" alt="Logo de platzi video">
+    </header>
+    <section class="error">
+        <div class="error__contenido">
+            <img class="error__img animacion" src="../Assets/icon-error.png" alt="Imagen ilustrativa de error">
+            <h1 class="error__text">Lo sentimos, no ha sido posible encontrar la pagina</h1>
+            <p><a href="/" class="regresar">Regresar a Inicio</a></p>
+        </div>
+    </section>
+    <footer class="footer">
+        <a href="/">Terminos de uso</a>
+        <a href="/">Declaración de privacidad</a>
+        <a href="/">Centro de ayuda</a>
+    </footer>
+</body>
+</html>
