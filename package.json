@@ -1,10 +1,10 @@
 {
   "name": "platzivideo",
   "version": "1.0.0",
-  "description": "\"\"",
+  "description": "Estudio de JS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "live-server"
   },
   "repository": {
     "type": "git",
@@ -13,10 +13,13 @@
   "keywords": [
     "[]"
   ],
-  "author": "\"\"",
+  "author": "Ingrid Banguero",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ingridbanguero/Proyecto---Platzi-Video/issues"
   },
-  "homepage": "https://github.com/ingridbanguero/Proyecto---Platzi-Video#readme"
+  "homepage": "https://github.com/ingridbanguero/Proyecto---Platzi-Video#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
 }
