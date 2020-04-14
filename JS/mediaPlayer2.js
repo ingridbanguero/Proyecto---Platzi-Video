@@ -1,13 +1,24 @@
 function MediaPlayer(config){
-    this.media = config.el;
-    this.plugins = config.plugins || [];
+    this.media = config.el; // Toma el elemento del objeto el (video)
+    this.plugins = config.plugins || []; // Toma el elemento del objeto plugins (new AutoPlay())
 
     this._initPlugins();
 }
 
 MediaPlayer.prototype._initPlugins = function (){
+    const player = {
+        play: () => this.play(),
+        pause: () => this.pause(),
+        media: this.media,
+        get muted(){
+            return this.media.muted; // True o false
+        },
+        set muted(value){
+            this.media.muted = value;
+        },
+    };
     this.plugins.forEach(plugin =>{
-        plugin.run(this);
+        plugin.run(player);
     })
 }
 
