@@ -1,4 +1,5 @@
 node_modules
-*.json
 .npm
 .DS_Store
+.cache
+dist

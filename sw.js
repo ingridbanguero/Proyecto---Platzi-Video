@@ -18,7 +18,7 @@ self.addEventListener('fetch', (e)=>{
 async function precache(){
     const cache = await caches.open(VERSION);// Instancia de un cache (version 1)
     return cache.addAll([ // Todos los archivos que hemos escrito
-        '/',
+        /* '/',
         '/mediaplayer.html',
         '/JS/mediaPlayer.js',
         '/JS/mediaPlayer2.js',
@@ -26,7 +26,7 @@ async function precache(){
         '/JS/plugins/AutoPause.js',
         '/Style/mediaplayer.css',
         '/Style/style.css',
-        '/Assets/BigBuckBunny.mp4'
+        '/Assets/BigBuckBunny.mp4' */
     ]);
 }
 

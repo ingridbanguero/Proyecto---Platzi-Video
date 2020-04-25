@@ -1,0 +1,29 @@
+{
+  "name": "platzivideo",
+  "version": "1.0.0",
+  "description": "Estudio de JS",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel mediaplayer.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ingridbanguero/Proyecto---Platzi-Video.git"
+  },
+  "keywords": [
+    "[]"
+  ],
+  "author": "Ingrid Banguero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ingridbanguero/Proyecto---Platzi-Video/issues"
+  },
+  "homepage": "https://github.com/ingridbanguero/Proyecto---Platzi-Video#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.8.3"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ]
+}
